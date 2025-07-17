@@ -1,0 +1,23 @@
+msgid "We use cookies to improve your experience."
+msgstr "Usamos cookies para mejorar su experiencia."
+
+msgid "Accept All"
+msgstr "Aceptar todo"
+
+msgid "Reject All"
+msgstr "Rechazar todo"
+
+msgid "Customize"
+msgstr "Personalizar"
+
+msgid "Essential"
+msgstr "Esencial"
+
+msgid "Analytics"
+msgstr "Analíticas"
+
+msgid "Marketing"
+msgstr "Marketing"
+
+msgid "Preferences"
+msgstr "Preferencias" 

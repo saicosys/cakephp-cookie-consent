@@ -1,0 +1,69 @@
+{
+    "name": "saicosys/cakephp-cookie-consent",
+    "description": "CakePHP 5 plugin for GDPR/CCPA-compliant cookie consent, Google Tag Manager, and GA4 integration.",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "keywords": [
+        "cakephp",
+        "cookie-consent",
+        "gdpr",
+        "ccpa",
+        "google-analytics",
+        "gtm",
+        "consent-mode",
+        "cookie",
+        "plugin",
+        "privacy"
+    ],
+    "authors": [
+        {
+            "name": "Saicosys Technologies",
+            "email": "info@saicosys.com",
+            "homepage": "https://saicosys.com",
+            "role": "authors"
+        },
+        {
+            "name": "Sandeep",
+            "email": "sandeepk@saicosys.com",
+            "homepage": "https://github.com/sandeep-kadyan",
+            "role": "authors"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "cakephp/cakephp": "5.1.*"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saicosys\\CookieConsent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Saicosys\\CookieConsent\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "check": [
+            "@test",
+            "@cs-check"
+        ],
+        "cs-check": "vendor/bin/phpcs --colors -p -s --extensions=php src/ tests/",
+        "cs-fix": "vendor/bin/phpcbf --colors -p -s --extensions=php src/ tests/"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
