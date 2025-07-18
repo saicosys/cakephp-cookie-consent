@@ -14,7 +14,6 @@
 - **Granular cookie control**: Users can accept/reject categories (analytics, marketing, preferences, etc.).
 - **Multiple consent models**: Support for opt-in, opt-out, and customizable consent flows.
 - **Consent log**: All consent actions are logged for compliance audits.
-- **Multilingual support**: All content is translatable via CakePHP i18n and .po files.
 
 ## Architecture
 
@@ -80,6 +79,10 @@ cp vendor/Saicosys/CookieConsent/config/cookie_consent.example.php config/cookie
 Render the banner in your layout:
 
 ```php
+// Add Marketing script in the <head> tag.
+<?= $this->CookieConsent->renderMarketingScript() ?>
+
+// Add banner in the <body> tag at bottom.
 <?= $this->CookieConsent->renderBanner() ?>
 ```
 
@@ -120,6 +123,7 @@ gtag('consent', 'update', {
   'analytics_storage': 'granted',
   'ad_storage': 'granted'
 });
+```
 
 ## Maintainer
 
