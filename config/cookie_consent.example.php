@@ -184,10 +184,10 @@ return [
         // Google integration settings
         'google' => [
             'enableConsentMode' => true, // Enable Google Consent Mode
-            'enableGTM' => true,         // Enable Google Tag Manager
-            'gtmId' => 'GT-XXXXXXXX',     // GTM Container ID
-            'enableGA4' => true,         // Enable Google Analytics 4
-            'ga4Id' => 'G-XXXXXXXXX',   // GA4 Measurement ID
+            'enableGTM' => true, // Enable Google Tag Manager
+            'gtmId' => 'GT-XXXXXXXX', // GTM Container ID
+            'enableGA4' => true, // Enable Google Analytics 4
+            'ga4Id' => 'G-XXXXXXXXX', // GA4 Measurement ID
         ],
     ],
 ];
